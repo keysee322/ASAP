@@ -108,6 +108,9 @@ html
                             img.pictures(src="img/slider/3rd.jpg", alt="")
                             img.pictures(src="img/slider/4th.jpg", alt="")
                             img.pictures(src="img/slider/5th.jpg", alt="")
+                        img.crutch.prev(src="img/slider/5th.jpg", alt="")
+                        img.crutch.next(src="img/slider/1st.jpg", alt="")
+                        
                     .slider-nav.flex
                         .buttons.flex
                             button#0.active
@@ -116,7 +119,7 @@ html
                             button#3
                             button#4
                         .arrows.flex
-                            button.left.flex(disabled)
+                            button.left.flex()
                                 img(src="img/icon/small_arrow.svg", alt="")
                             button.right.flex
                                 img(src="img/icon/small_arrow.svg", alt="")

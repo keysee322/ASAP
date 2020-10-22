@@ -86,37 +86,69 @@ let current = 0;
 let buttons = $('.buttons').find('button');
 let number = 0;
 let difference = '100%';
+let downInterval = setInterval(() => {
+  $('.right').trigger('click');
+}, 4000);
 
 $('.right').on("click",function(){
-  
+  clearInterval(downInterval);
+  downInterval = setInterval(() => {
+    $('.right').trigger('click');
+  }, 4000);
   $('.slider-hack').animate({ left: '-=' + difference }, 200 );
   document.getElementsByClassName('pictures')[current].classList.remove('active');
   buttons[current].classList.remove('active');
   ++current;
+  if (current==5){
+    document.getElementsByClassName('next')[0].style.left = '100%';
+    $('.next').animate({ left: '+=-100%' }, 200 );
+    current = 0;
+    setTimeout(() => {
+    document.getElementsByClassName('slider-hack')[0].style.left = '0';
+    document.getElementsByClassName('next')[0].style.left = '100%';
+  }, 220);
+}
   document.getElementsByClassName('pictures')[current].classList.add('active');
   buttons[current].classList.add('active');
-  if (current==4)
-    document.getElementsByClassName('right')[0].disabled = true;;
-  if (document.getElementsByClassName('left')[0].disabled == true)
-  document.getElementsByClassName('left')[0].disabled = false;;
+
   difference = '100%';
   number = current;
 });
 
+
 $('.left').on("click",function(){
+  clearInterval(downInterval)
+  downInterval = setInterval(() => {
+      $('.right').trigger('click');
+    }, 4000);
   $('.slider-hack').animate({ left: '+='+ difference }, 200 );
   document.getElementsByClassName('pictures')[current].classList.remove('active');
   buttons[current].classList.remove('active');
   current--;
+  if (current === -1){
+    document.getElementsByClassName('prev')[0].style.left = '-100%';
+    $('.prev').animate({ left: '+=100%' }, 200 );
+    current = 4;
+    setTimeout(() => {
+      document.getElementsByClassName('slider-hack')[0].style.left = '-400%';
+      document.getElementsByClassName('prev')[0].style.left = '-100%';
+    }, 220);
+  }
   document.getElementsByClassName('pictures')[current].classList.add('active');
   buttons[current].classList.add('active');
-  if (current === 0)
-    document.getElementsByClassName('left')[0].disabled = true;
+
   if (document.getElementsByClassName('right')[0].disabled = false)
   document.getElementsByClassName('right')[0].disabled = false;
   difference = '100%';
   number = current;
+
+  
+  document.addEventListener("DOMContentLoaded", function Appear() {
+    $(document.getElementsByClassName('active')[1]).animate({ opacity: '1' }, 200 );
+  });
 });
+
+
 
 $(".buttons").find('button').on("click", function(){
   buttons[number].classList.remove('active');
