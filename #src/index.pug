@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon")
+        script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
+        link(href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet")
+
+        
+        title ASAP
+    body
+        header.flex
+            a(href="/").logo
+                img(src="img/logo.svg")
+            .main-right.flex
+                a(href="#regoin") Регион
+                a(href="#corp") Корпорация
+                a(href="#servises") Услуги
+                a(href="#stories") Истории успеха
+                a(href="#news") Новости
+                a(href="#contacts") Контакты
+                button.drop-menu-icon
+                    div
+                    div
+                    div
+
+        button.drop-menu-close
+        nav.drop-menu
+            h3 Меню
+            a(class="close" href="#")
+            .text-container.flex
+                a(href='#') Регион
+                a(href='#') Корпорация
+                a(href='#') Услуги
+                a(href='#') Новости
+                a(href='#') Инвестиционная карта
+                a(href='#') Проекты
+                a(href='#') Площадки
+                a(href='#') Контакты
+            footer
+                p Телефон:
+                    a +7 (8452) 69-69-32
+                p E-mail:
+                    a chudinatn@saratovcorporation.ru
+
+
+
+        .first-container 
+            .first
+                .content-container.limitation
+                    div
+                        h1 Территория возможностей
+                        p Сопровождение инвистиционных проектов на территоррии Саратовской области
+                    a(href='#').flex Отправить заявку
+                        img(src="img/icon/arrow.svg")
+                .slider
+                    button.graph.active
+                        div
+                    button.graph
+                        div
+                    button.graph
+                        div
+                    button.graph
+                        div
+
+                    img(src="img/vector.png", alt="")
+
+                    .graph-info.active
+                        p Земельные участки Greenfield
+                        h1 406
+                        p гектар
+                    .graph-info
+                        p Площадь для комфортного делового климата
+                        h1 101 000
+                        p Квадратных киллометров
+                    .graph-info
+                        p Свободных инвестиционных площадок
+                        h1 600
+                    .graph-info
+                        p Свободные площадки Brownfield
+                        h1 10
+                        
+                .list.limitation.flex
+                    a Инвестиционная карта
+                        img(src="img/icon/barrow.svg")
+                        img.red(src="img/icon/rarrow.svg")
+                    a Проекты
+                        img(src="img/icon/barrow.svg")
+                        img.red(src="img/icon/rarrow.svg")
+                    a Площадки
+                        img(src="img/icon/barrow.svg")
+                        img.red(src="img/icon/rarrow.svg")
+        .about.flex
+            .content-container.flex.limitation
+                .text
+                    h1 О регионе
+                    p Саратовская область – это среда комфортного делового климата, территория привлекательных инвестиционных возможностей. Одновременное сочетание выгодного территориального расположения, уникальных климатических условий, обилия природных ресурсов создает условия для формирования мощного промышленного и сельскохозяйст– венного потенциала, благоприятного ведения бизнеса, производства товаров и услуг.
+                    a(href="#openModal") Узнать больше
+                        img(src="img/icon/arrow.svg", alt="")
+                .slider-container
+                    .slider
+                        .slider-hack
+                            img.pictures(src="img/slider/1st.jpg", alt="").active
+                            img.pictures(src="img/slider/2nd.jpg", alt="")
+                            img.pictures(src="img/slider/3rd.jpg", alt="")
+                            img.pictures(src="img/slider/4th.jpg", alt="")
+                            img.pictures(src="img/slider/5th.jpg", alt="")
+                    .slider-nav.flex
+                        .buttons.flex
+                            button#0.active
+                            button#1
+                            button#2
+                            button#3
+                            button#4
+                        .arrows.flex
+                            button.left.flex(disabled)
+                                img(src="img/icon/small_arrow.svg", alt="")
+                            button.right.flex
+                                img(src="img/icon/small_arrow.svg", alt="")
+
+            .about-footer.flex.limitation
+                div
+                    h2 700 мл. т.
+                    p Потенциальные запасы нефти
+                div
+                    h2 26914 км
+                    p Протяженность автомобильных дорог
+                div
+                    h2 709 км
+                    p Протяженность водных путей
+                div
+                    h2 2291 км
+                    p Протяженность ж/д путей
+
+    .modal(id="openModal")
+        .modal-window.flex
+            a(class="close" href="#close")
+            .content-container
+                h1 Регион
+                p Сопровождение инвестиционных проектов в режиме "одного окна". Снижение административных барьеров, помощь в подготовке и оформлении документов, оперативное предоставление информации. На стадии сопровождения Корпорацией от лица инициатора осуществляется взаимодействие с органами исполнительной власти, органами местного самоуправления, ресурсоснабжающими организациями, институтами развития, банковскими подразделениями, а также продвижение проектов на региональном, международном и национальном рынках.
+                button Посмотреть
+        script(src="js/animate.js")
+        script(src="js/script.js")
+
+
+
+
+
+                
+                
+                

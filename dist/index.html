@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <title>ASAP</title>
+  </head>
+  <body>
+    <header class="flex"><a class="logo" href="/"><img src="img/logo.svg"/></a>
+      <div class="main-right flex"><a href="#regoin">Регион</a><a href="#corp">Корпорация</a><a href="#servises">Услуги</a><a href="#stories">Истории успеха</a><a href="#news">Новости</a><a href="#contacts">Контакты</a>
+        <button class="drop-menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </div>
+    </header>
+    <button class="drop-menu-close"></button>
+    <nav class="drop-menu">
+      <h3>Меню</h3><a class="close" href="#"></a>
+      <div class="text-container flex"><a href="#">Регион</a><a href="#">Корпорация</a><a href="#">Услуги</a><a href="#">Новости</a><a href="#">Инвестиционная карта</a><a href="#">Проекты</a><a href="#">Площадки</a><a href="#">Контакты</a></div>
+      <footer>
+        <p>Телефон:<a>+7 (8452) 69-69-32</a></p>
+        <p>E-mail:<a>chudinatn@saratovcorporation.ru</a></p>
+      </footer>
+    </nav>
+    <div class="first-container"> 
+      <div class="first">
+        <div class="content-container limitation">
+          <div>
+            <h1>Территория возможностей</h1>
+            <p>Сопровождение инвистиционных проектов на территоррии Саратовской области</p>
+          </div><a class="flex" href="#">Отправить заявку<img src="img/icon/arrow.svg"/></a>
+        </div>
+        <div class="slider">
+          <button class="graph active">
+            <div></div>
+          </button>
+          <button class="graph">
+            <div></div>
+          </button>
+          <button class="graph">
+            <div></div>
+          </button>
+          <button class="graph">
+            <div></div>
+          </button><img src="img/vector.png" alt=""/>
+          <div class="graph-info active">
+            <p>Земельные участки Greenfield</p>
+            <h1>406</h1>
+            <p>гектар</p>
+          </div>
+          <div class="graph-info">
+            <p>Площадь для комфортного делового климата</p>
+            <h1>101 000</h1>
+            <p>Квадратных киллометров</p>
+          </div>
+          <div class="graph-info">
+            <p>Свободных инвестиционных площадок</p>
+            <h1>600</h1>
+          </div>
+          <div class="graph-info">
+            <p>Свободные площадки Brownfield</p>
+            <h1>10</h1>
+          </div>
+        </div>
+        <div class="list limitation flex"><a>Инвестиционная карта<img src="img/icon/barrow.svg"/><img class="red" src="img/icon/rarrow.svg"/></a><a>Проекты<img src="img/icon/barrow.svg"/><img class="red" src="img/icon/rarrow.svg"/></a><a>Площадки<img src="img/icon/barrow.svg"/><img class="red" src="img/icon/rarrow.svg"/></a></div>
+      </div>
+    </div>
+    <div class="about flex">
+      <div class="content-container flex limitation">
+        <div class="text">
+          <h1>О регионе</h1>
+          <p>Саратовская область – это среда комфортного делового климата, территория привлекательных инвестиционных возможностей. Одновременное сочетание выгодного территориального расположения, уникальных климатических условий, обилия природных ресурсов создает условия для формирования мощного промышленного и сельскохозяйст– венного потенциала, благоприятного ведения бизнеса, производства товаров и услуг.</p><a href="#openModal">Узнать больше<img src="img/icon/arrow.svg" alt=""/></a>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slider-hack"><img class="pictures active" src="img/slider/1st.jpg" alt=""/><img class="pictures" src="img/slider/2nd.jpg" alt=""/><img class="pictures" src="img/slider/3rd.jpg" alt=""/><img class="pictures" src="img/slider/4th.jpg" alt=""/><img class="pictures" src="img/slider/5th.jpg" alt=""/></div>
+          </div>
+          <div class="slider-nav flex">
+            <div class="buttons flex">
+              <button class="active" id="0"></button>
+              <button id="1"></button>
+              <button id="2"></button>
+              <button id="3"></button>
+              <button id="4"></button>
+            </div>
+            <div class="arrows flex">
+              <button class="left flex" disabled="disabled"><img src="img/icon/small_arrow.svg" alt=""/></button>
+              <button class="right flex"><img src="img/icon/small_arrow.svg" alt=""/></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-footer flex limitation">
+        <div>
+          <h2>700 мл. т.</h2>
+          <p>Потенциальные запасы нефти</p>
+        </div>
+        <div>
+          <h2>26914 км</h2>
+          <p>Протяженность автомобильных дорог</p>
+        </div>
+        <div>
+          <h2>709 км</h2>
+          <p>Протяженность водных путей</p>
+        </div>
+        <div>
+          <h2>2291 км</h2>
+          <p>Протяженность ж/д путей</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="modal" id="openModal">
+    <div class="modal-window flex"><a class="close" href="#close"></a>
+      <div class="content-container">
+        <h1>Регион</h1>
+        <p>Сопровождение инвестиционных проектов в режиме "одного окна". Снижение административных барьеров, помощь в подготовке и оформлении документов, оперативное предоставление информации. На стадии сопровождения Корпорацией от лица инициатора осуществляется взаимодействие с органами исполнительной власти, органами местного самоуправления, ресурсоснабжающими организациями, институтами развития, банковскими подразделениями, а также продвижение проектов на региональном, международном и национальном рынках.</p>
+        <button>Посмотреть</button>
+      </div>
+    </div>
+    <script src="js/animate.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+</html>
